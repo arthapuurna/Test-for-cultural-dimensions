@@ -62,7 +62,7 @@ button {
   </div>
 
   <div class="question">
-    <p>3. It’s important to give everyone a comfortable life, regardless of their contributions.</p>
+    <p>3. Other people or circumstances ever prevent me from doing what I really want to.</p>
     <div class="scale" data-q="q3"></div>
   </div>
 
@@ -102,7 +102,7 @@ button {
   </div>
 
   <div class="question">
-    <p>11. People could be able to have everything they need or want if we just let them.</p>
+    <p>11. I am happy person.</p>
     <div class="scale" data-q="q11"></div>
   </div>
 
@@ -177,7 +177,7 @@ button {
   </div>
 
   <div class="question">
-    <p>26. It is not good for people to get what they need or want if their contributions are not valuable enough to allow it.</p>
+    <p>26. It is important to have few desires.</p>
     <div class="scale" data-q="q26"></div>
   </div>
 
@@ -228,7 +228,7 @@ important to me.</p>
   </div>
 
   <div class="question">
-    <p>36. People are too obsessed with having a comfortable life as opposed to thinking more about how they could contribute.</p>
+    <p>36. It is important to do a work which would be my hobby.</p>
     <div class="scale" data-q="q36"></div>
   </div>
 
@@ -264,7 +264,7 @@ document.querySelectorAll(".scale").forEach(el => {
 const dimensions = {
   q1: { name: "Pragmatism", invert: true },
   q2: { name: "Masculinity", invert: false },
-  q3: { name: "Indulgence", invert: false },
+  q3: { name: "Indulgence", invert: true },
   q4: { name: "Masculinity", invert: false },
   q5: { name: "Power_distance", invert: false },
   q6: { name: "Power_distance", invert: false },
@@ -297,7 +297,7 @@ const dimensions = {
   q33: { name: "Individualism", invert: true },
   q34: { name: "Indulgence", invert: true },
   q35: { name: "Pragmatism", invert: true },
-  q36: { name: "Indulgence", invert: true }
+  q36: { name: "Indulgence", invert: false }
 };
 
 /* ===== HOFSTEDE RANGES ===== */
@@ -307,7 +307,7 @@ const hofstedeRanges = {
   Masculinity: [3, 5],
   Uncertainty_avoidance: [3, 5],
   Pragmatism: [1.5, 4.5],
-  Indulgence: [1.5, 6]
+  Indulgence: [3.1, 4.98]
 };
 
 /* ===== COUNTRY DATA ===== */
@@ -383,11 +383,11 @@ const countries = {
   "Peru": { Power_distance: 64, Individualism: 16, Masculinity: 42, Uncertainty_avoidance: 87, Pragmatism: 5, Indulgence: 46 },
   "Philippines": { Power_distance: 94, Individualism: 32, Masculinity: 64, Uncertainty_avoidance: 44, Pragmatism: 27, Indulgence: 42 },
   "Poland": { Power_distance: 69, Individualism: 60, Masculinity: 64, Uncertainty_avoidance: 93, Pragmatism: 38, Indulgence: 29 },
-  "Portugal": { Power_distance: 63, Individualism: 27, Masculinity: 31, Uncertainty_avoidance: 99, Pragmatism: 42, Indulgence: 44 },
+  "Portugal": { Power_distance: 63, Individualism: 51, Masculinity: 31, Uncertainty_avoidance: 99, Pragmatism: 42, Indulgence: 33 },
   "Puerto Rico": { Power_distance: 68, Individualism: 27, Masculinity: 56, Uncertainty_avoidance: 38, Pragmatism: 0, Indulgence: 90 },
   "Russia": { Power_distance: 93, Individualism: 39, Masculinity: 55, Uncertainty_avoidance: 95, Pragmatism: 70, Indulgence: 20 },
   "Romania": { Power_distance: 70, Individualism: 30, Masculinity: 42, Uncertainty_avoidance: 90, Pragmatism: 52, Indulgence: 20 },
-  "Saudi Arabia": { Power_distance: 95, Individualism: 25, Masculinity: 43, Uncertainty_avoidance: 64, Pragmatism: 27, Indulgence: 14 },
+  "Saudi Arabia": { Power_distance: 95, Individualism: 25, Masculinity: 43, Uncertainty_avoidance: 64, Pragmatism: 27, Indulgence: 52 },
   "Serbia": { Power_distance: 86, Individualism: 25, Masculinity: 43, Uncertainty_avoidance: 92, Pragmatism: 52, Indulgence: 28 },
   "Singapore": { Power_distance: 74, Individualism: 43, Masculinity: 48, Uncertainty_avoidance: 46, Pragmatism: 67, Indulgence: 8 },
   "Slovakia": { Power_distance: 71, Individualism: 52, Masculinity: 57, Uncertainty_avoidance: 77, Pragmatism: 51, Indulgence: 28 },
@@ -403,7 +403,7 @@ const countries = {
   "Turkey": { Power_distance: 66, Individualism: 37, Masculinity: 80, Uncertainty_avoidance: 85, Pragmatism: 35, Indulgence: 49 },
   "Tunisia": { Power_distance: 78, Individualism: 27, Masculinity: 40, Uncertainty_avoidance: 74, Pragmatism: 24, Indulgence: 41 },
   "Ukraine": { Power_distance: 65, Individualism: 25, Masculinity: 55, Uncertainty_avoidance: 95, Pragmatism: 70, Indulgence: 14 },
-  "United Arab Emirates": { Power_distance: 72, Individualism: 36, Masculinity: 52, Uncertainty_avoidance: 66, Pragmatism: 22, Indulgence: 22 },
+  "United Arab Emirates": { Power_distance: 72, Individualism: 36, Masculinity: 52, Uncertainty_avoidance: 66, Pragmatism: 22, Indulgence: 60 },
   "United Kingdom": { Power_distance: 50, Individualism: 76, Masculinity: 50, Uncertainty_avoidance: 35, Pragmatism: 51, Indulgence: 69 },
   "United States": { Power_distance: 40, Individualism: 62, Masculinity: 91, Uncertainty_avoidance: 26, Pragmatism: 46, Indulgence: 68 },
   "Uruguay": { Power_distance: 61, Individualism: 60, Masculinity: 38, Uncertainty_avoidance: 98, Pragmatism: 50, Indulgence: 53 },
